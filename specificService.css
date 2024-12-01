@@ -1,0 +1,563 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.main{
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+body{
+  min-height:100vh;
+  background-color:#CDCFC0 ;
+}
+nav{
+  background-color: #C6B6A6FF
+}
+
+
+nav ul{
+  width:100%;
+  list-style:none;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+
+}
+
+nav li{
+  height:50px;
+ 
+}
+
+nav a{
+  height:100%;
+  padding: 0 30px;
+  text-decoration:none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+#back{
+  width:3.1rem;
+  position:absolute;
+  margin-left:3%;
+  margin-top: 1%;
+ 
+}
+
+#back:hover{
+  cursor:pointer;
+  color:rgb(235, 225, 225); 
+}
+.sidebar{
+  position:fixed;
+  top:0;
+  right:0;
+  height:100vh;
+  width:12rem;
+  z-index:999;
+  background-color:rgba(198, 182, 166,0.5);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter:blur(10px);
+  display:none; 
+  
+}
+.sidebar li{
+  width:100%;
+  
+}
+
+.sidebar a{
+  width:100%;
+  
+}
+.menu-button{
+  display:none;
+}
+a:link {
+    color: black;
+    font-family: aboreto;
+    text-decoration: none;
+  }
+  
+ 
+  a:visited {
+    color: rgb(16, 17, 16);
+  }
+  a.current{
+    color:#636AE8;
+  }
+ 
+  a:hover{
+    color:#636AE8;
+  }
+ 
+
+
+  .title{
+    width:100%;
+    height:4.375rem;
+    background-color: white;
+    text-align: center;
+    font-size: 3.125rem;
+    font-family: quattrocento;
+    line-height: 4.688rem;
+    font-weight:bold;
+    color: #81A984FF;
+  }
+  
+  .f-des{
+    margin: 6.25rem 3rem 0rem 12rem;
+    width: 50%;
+    height:30.875rem;
+    justify-content: center;
+    position: absolute;
+    font-size: 1.875rem;
+    font-family: quattrocento;
+    text-align: justify;
+    line-height: 1.5;
+    
+    
+
+        
+  }
+
+  .i-0{
+    border-radius: 11.063rem 11.063rem 0rem 0rem;
+    position: absolute;
+    height: 29.688rem;
+    width:18.75rem;
+    left:70%;
+    right:3%;
+    top:25%;
+    margin-bottom: 0%;
+    
+
+  }
+
+  
+  .choices{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top:37rem;
+    display:block;
+    gap: 10.625rem
+    
+    
+ }
+
+ .s-choices{
+   background-color: white;
+   width:21.875rem;
+   height: 1.875rem;
+   display: flex;
+   border-radius: 0rem 0.938rem 0.938rem 0rem;
+   text-decoration:underline;
+   margin-bottom: .625rem;
+   justify-content: left;
+   align-items: center;
+   padding-left: 3.125rem;
+ }
+
+ .h-choices:hover{
+   color:#636AE8;
+  
+ }
+
+ .title-1,.title-3, .title-3-fs, .title-5, .title-5-fs{
+   
+  left:60%;
+  position:absolute;
+  width: 40%;
+  height:3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem 0rem 0rem 2rem;
+  background-color: aliceblue;
+  font-family: quattrocento;
+  font-size: 2.1rem;
+  font-weight:bold; 
+  
+  
+}
+
+
+
+.first, .third, .third-fs, .fifth, .fifth-fs{
+  position:absolute;
+  width: 100%;
+  height:37.5rem;
+  display: flex;
+  
+  
+}
+.first{
+  top:62.5rem;
+}
+
+.img-left{
+  width: 25.938rem;
+  height: 25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.5rem 1.063rem #171a1f, 0px 0px 2px #171a1f;
+  margin:7rem 0 0 5rem;  
+
+}
+
+.des-right{
+  width:50%;
+  height:21.875rem;
+  margin:7rem 4rem 0rem 5rem;
+  font-family: 'aboreto';
+  font-size:1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  color: #171A1FFF;
+  text-align: justify;
+  text-transform:uppercase;
+  
+
+}
+
+
+
+span p{
+  width:36rem;
+  height:3.125rem;
+  background-color: #171a1f;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.563rem;
+
+
+  
+}
+
+
+.title-2, .title-2-fs, .title-4, .title-4-fs{
+ 
+  position:absolute;
+  width: 40%;
+  height:3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 2rem 2rem 0rem;
+  background-color: aliceblue;
+  font-family: quattrocento;
+  font-size: 2.3rem;
+  font-weight:bold; 
+  
+  
+}
+
+.second, .second-fs, .fourth, .fourth-fs{
+  position:absolute;
+  width: 100%;
+  height:37.5rem;
+  display: flex;
+  
+  
+  
+  
+}
+.second, .second-fs{
+  top:106rem;
+}
+
+.img-right{
+  width: 25.938rem;
+  height: 25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.5rem 1.063rem #171a1f, 0px 0px 2px #171a1f;
+  margin:7rem 3rem 0 4rem;  
+  
+
+
+}
+
+.des-left{
+  width:55%;
+  height:21.875rem;
+  font-family: 'aboreto';
+  font-size:1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  color: #171A1FFF;
+  text-align: justify;
+  margin:7rem 2rem 0rem 5rem;
+  text-transform:uppercase;
+}
+
+
+.third, .third-fs{
+  top: 150rem;
+
+
+}
+
+
+.fourth, .fourth-fs{
+  top: 193.75rem;
+  margin-left: .5rem;
+}
+
+
+.fifth, .fifth-fs{
+  top: 237rem;
+}
+  #top{
+    font-size:3.125rem;
+    position: fixed;
+    top:90%;
+    left:50%;
+    cursor: pointer;
+    color:  #81A984FF;
+    
+    
+  }
+
+  #top:hover{
+    color: rgb(57, 88, 59);
+  }
+  
+
+
+  @media (min-width:360px) and (max-width:800px){
+    .hide{
+      display:none;
+     }
+     .menu-button{
+       display:block;
+     }
+
+     .sidebar{
+      height:100rem;
+     }
+
+     .i-0{
+      border-radius: 11.7rem 11.7rem 0rem 0rem;
+      height: 18rem;
+      width:13rem;
+      position:relative;
+      align-self:center;
+      left:23%;
+      right:0%;
+      margin-top:2rem;
+      
+     }
+     .f-des{
+      margin: 2rem .4rem 0rem 1rem;
+      width: 90%;
+      height:16rem;
+      position: absolute;
+      font-size:1.2rem;
+      text-align: center;
+      
+          
+    }
+
+    .choices{
+      position: relative;
+      width: 60%;
+      height: 40%;
+      margin-left: 20%;
+      gap: 15rem;
+      top:19rem;
+      
+   }
+
+   .s-choices{
+    font-size:.7rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    border-radius: 1rem ;
+    text-decoration:underline;
+    margin-bottom: .625rem;
+    justify-content: center;
+    align-items: center;
+    padding-left:0;
+   
+  }
+  .title-1, .title-3, .title-3-fs, .title-5, .title-5-fs{
+    margin-left: 14%;
+    left:0;
+    position:relative;
+    width: 74%;
+    height:3.1rem;
+    border-radius: 1.25rem;
+    font-size:1.3rem;
+    padding:.5rem;
+    text-align: center;
+    
+  }
+  .title-3, .title-3-fs{
+    font-size:1.2rem;
+  }
+  .title-2, .title-2-fs, .title-4, .title-4-fs{
+    width: 75%;
+    height:3.1rem;
+    border-radius: 1.25rem;
+    font-size: 1.3rem;
+    position:relative;
+    margin:auto auto 0% 37%;
+    padding:.5rem;
+    text-align: center;
+  }
+
+
+  .first, .third,.third-fs, .fifth, .fifth-fs{
+    position:relative;
+    width: 100%;
+    height:37.5rem;
+    display: block;
+    justify-content: center;
+    margin-top:3rem;
+    
+ 
+  }
+  .first{
+    top: 21.5rem;
+  }
+
+  .img-left{
+    margin:2rem  0rem 1.5rem 4rem;
+    width:15rem;
+    height:15rem;
+
+  }
+
+  .des-right{
+    width:75%;
+    height:15rem;
+    margin:0rem 3rem auto 3rem;
+    font-size:1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    
+    
+    
+    
+
+  
+  }
+  span p{
+    width:17rem;
+    height:2rem;
+    margin-left:0rem;
+    font-size: .9rem;
+    
+  }
+ 
+
+ 
+  .second, .second-fs,.fourth, .fourth-fs{
+    position:relative;
+    width: 100%;
+    height:37.5rem;
+    margin-left:0rem;
+    display: flex;
+    flex-direction: column-reverse;  
+    align-items: center;
+    
+   
+  }
+  .second{
+    top:34rem;
+  }
+
+  .second-fs{
+    top:33rem;
+  }
+  .title-2,.title-2-fs{
+    position:absolute;
+    top:-4.5rem;
+    margin-right:8rem;
+  
+  }
+  .des-left{
+    left:18%;
+    width:75%;
+    height:21.875rem;
+    font-size:1rem;
+    line-height: 1.4rem;
+    padding-right:0rem;
+    margin:2rem 0rem 0rem 0rem;
+    text-align: center;
+    
+   
+   
+
+  }
+
+  .img-right{
+    margin:0rem 5.1rem 0 5rem;  
+    width:17rem;
+    height:18rem;
+    
+
+  }
+
+
+  .third{
+    top:34.7rem;
+  }
+  .third-fs{
+    top:33.5rem;
+  }
+  .title-4, .title-4-fs{
+    position:absolute;
+    top:-5rem;
+    margin-right:8rem;
+  }
+
+  .fourth{
+    top:53rem;
+  }
+  .fourth-fs{
+    top: 50rem;
+  }
+
+ .fifth, .fifth-fs{
+  top:54rem;
+ }
+ #top{
+  font-size: 3rem;
+  left:44%;
+  top:92%;
+}
+
+
+#back{
+  
+  position:absolute;
+  margin-left:2.7%;
+  margin-top:3%;
+ 
+}
+
+    }
+    
+ 
